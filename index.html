@@ -21,7 +21,7 @@
           window.location =
             "http://mars.skycash.com/tags/show?id=mainScreen:lite";
         }, 50);
-        window.location = `"${parsedUrl.searchParams.get("deep")}"`;
+        location.href = parsedUrl.searchParams.get("deep");
       } else {
         window.location =
           "http://mars.skycash.com/tags/show?id=mainScreen:lite";
