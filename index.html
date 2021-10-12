@@ -8,18 +8,16 @@
   </head>
   <body>
     <script>
-      if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
         var now = new Date().valueOf();
         setTimeout(function () {
           if (new Date().valueOf() - now > 100) return;
-          if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-            window.location =
-              "https://apps.apple.com/pl/app/skycash/id320226186?l=pl&referrer=utm_source%3Dskycash.com&utm_campaign=skycash.com&utm_content=footer&utm_medium=homepage";
-          }
-          if (/Android/i.test(navigator.userAgent)) {
-            window.location =
-              "https://play.google.com/store/apps/details?id=com.skycash.beta&referrer=utm_source%3Dskycash.com&utm_medium=homepage&utm_content=footer&utm_campaign=skycash.com";
-          }
+          window.location =
+            "http://mars.skycash.com/tags/show?id=mainScreen:lite";
         }, 50);
         window.location =
           "skycash://mars.skycash.com/tags/show?id=mainScreen:lite";
