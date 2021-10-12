@@ -9,7 +9,7 @@
   <body>
     <script>
       const parsedUrl = new URL(window.location.href);
-
+      console.log(parsedUrl.searchParams.get("deep"));
       if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent
