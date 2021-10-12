@@ -16,9 +16,8 @@
         var now = new Date().valueOf();
         setTimeout(function () {
           if (new Date().valueOf() - now > 100) return;
-          var twitterUrl =
+          window.location =
             "http://mars.skycash.com/tags/show?id=mainScreen:lite";
-          window.open(twitterUrl, "_blank");
         }, 50);
         window.location =
           "skycash://mars.skycash.com/tags/show?id=mainScreen:lite";
